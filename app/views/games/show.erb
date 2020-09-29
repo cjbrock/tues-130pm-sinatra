@@ -1,0 +1,14 @@
+<h1>More information about <%= @id.name%>: </h1>
+<p>Console: <%= @id.console.name%> </p>
+<p>Rating: <%= @id.rating %></p>
+<p>Genre: <%= @id.genre %> </p>
+<p> 2D or 3D: 
+    <% if @id.is_threed%>
+        3D
+    <% else%>
+        2D
+    <%end%>
+</p>
+<p>Developer: <%= @id.developer %> </p>
+<p>Release Date: <%= @id.release_date %> </p>
+
